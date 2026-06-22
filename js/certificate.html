@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Certificate</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="certificate">
+
+<h1>IKAZE DRIVING SCHOOL</h1>
+
+<h2>CERTIFICATE OF COMPLETION</h2>
+
+<p>This certificate is awarded to</p>
+
+<h3 id="studentName"></h3>
+
+<p>
+For successfully completing the
+Driving Theory Training Program
+</p>
+
+<button onclick="window.print()">
+Print Certificate
+</button>
+
+</div>
+
+<script>
+
+document.getElementById("studentName")
+.innerText =
+localStorage.getItem("user") ||
+"Student";
+
+</script>
+
+</body>
+</html>
